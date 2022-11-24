@@ -1,0 +1,15 @@
+.map {
+  /* width: 800px;
+  height: 800px; */
+  background-color: bisque;
+}
+
+.current {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}

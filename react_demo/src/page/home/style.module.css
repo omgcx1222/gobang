@@ -1,0 +1,75 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9;
+}
+
+.login .login-box {
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: #bbb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .login-box input {
+  height: 30px;
+}
+
+.login .login-box button {
+  width: 80px;
+  height: 30px;
+}
+
+.room-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 200px;
+  margin: 50px;
+  position: relative;
+}
+
+.btn .current {
+  position: absolute;
+  left: -30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn .text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.btn button {
+  padding: 5px 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
