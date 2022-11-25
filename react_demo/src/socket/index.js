@@ -68,5 +68,5 @@ class Socket {
   }
 }
 
-const socket = new Socket("ws://s7upet.natappfree.cc/socket")
+const socket = new Socket("ws://192.168.3.64:8083/socket")
 export default socket
