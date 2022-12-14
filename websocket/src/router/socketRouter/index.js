@@ -8,7 +8,7 @@ socketRouter.get('/socket', async (ctx) => {
 
   ctx.websocket.on('message', message => {
     const data = JSON.parse(message)
-    console.log(data, 'data');
+    // console.log(data, 'data');
 
     switch (data.type) {
       case LOGIN:
