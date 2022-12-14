@@ -15,6 +15,12 @@ const Message = memo((props) => {
     setMsg("")
   }
 
+  const keyUp = (e) => {
+    if (e.keyCode === 13) {
+      sendMsg(msg)
+    }
+  }
+
   useEffect(() => {
     if (listRef.current.offsetHeight < listRef.current.scrollHeight) {
       listRef.current.scrollTop = listRef.current.scrollHeight
@@ -35,7 +41,7 @@ const Message = memo((props) => {
         }
       </div>
       <div className={style.send}>
-        <input type="text" value={msg} placeholder="长度1-80个字符串" onInput={e => setMsg(e.target.value)} />
+        <input type="text" value={msg} placeholder="长度1-80个字符串" onInput={e => setMsg(e.target.value)} onKeyUp={e => keyUp(e)} />
         <button onClick={() => sendMsg(msg)}>发送</button>
       </div>
     </div>
